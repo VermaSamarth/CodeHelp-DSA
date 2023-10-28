@@ -15,12 +15,13 @@ Data structures and algorithms are the building blocks of Computer Science. They
 - Basic Sorting Algorithms
 - Pointer
 - Recursion
-### Topics to be covered ✍️:
 - Backtracking
 - Divide and Conquer
+### Topics to be covered ✍️:
 - Object Oriented Programming
 - Linked List
-- Stacks and Queues
+- Stacks
+- Queues
 - Trees
 - Heaps
 - Hash Maps
