@@ -15,11 +15,11 @@ class Animal{
 
         // Behaviour
         void eat(){
-            cout << "Eating" << endl;
+            cout << name <<" is eating" << endl;
         }
 
         void sleep(){
-            cout << "Sleeping" << endl;
+            cout << name << " is sleeping" << endl;
         }
 
         // Setters Function
@@ -58,6 +58,15 @@ int main(){
 
 
     // Dynamic Memory
+    Animal* suresh = new Animal;
+    (*suresh).age = 40;
+    (*suresh).name = "Billi";
+    (*suresh).eat();
+    (*suresh).sleep();
 
-     
+    // Alternative way
+    suresh->age = 50;
+    suresh->name = "Kutta";
+    suresh->eat();
+    suresh->sleep();
 }
