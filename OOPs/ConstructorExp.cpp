@@ -21,12 +21,17 @@ class Animal{
         }
 
 
+
         // Parameterised COnstructor
         Animal(int age, string name){
             this->age = age;
             this->name = name;
             cout << "Parameterised Constructor is called." << endl;
         }
+
+        // Initialization List
+        // Modern way to making a constructor
+        // Animal(int _age, string _name): age(age), name(name){cout << "Parameterised Constructor is called." << endl;}
 
         // Behaviour
         void eat(){
