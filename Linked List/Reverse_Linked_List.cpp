@@ -46,6 +46,21 @@ void printList(Node* &head){
     return;
 }
 
+// Another logic from the leetcode reverse the string question.
+
+// ListNode* reverseList(ListNode* head) {
+//         ListNode* left = NULL;
+//         ListNode* curr = head;
+//         ListNode* right ;
+//         while(curr != NULL){
+//             right = curr->next;
+//             curr->next = left;
+//             left = curr;
+//             curr = right;
+//         }
+//         return left;
+//     }
+
 int main(){
     Node* head = NULL;
     Node* tail = NULL;

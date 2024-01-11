@@ -92,28 +92,14 @@ void printList(Node* &head){
 }
 
 void SegregateLinkedList(Node* &head, Node* &tail){
-    Node* remPos = tail;
-    Node* start = head;
-    cout << "Segregation Started..." << endl;
-    int len = findLength(head);
-    int i = 0;
-    while(i < len){
-        cout << "Checking condition...." << endl;
-        // int num = start-> data;
-        if((start->data%2) != 0){
-            cout << "Odd found...." << endl;
-            Node* temp = start;
-            Node* newNode = new Node(temp->data);
-            tail->next = newNode;
-            tail = newNode;
-            head = head->next;
-            temp->next = NULL;
-            delete temp;
+    int len = findLength(head), count = 0;
+    Node* temp = head;
+    while(count < len){
+        if(count%2 == 0){
         }
-        start = start->next;
-        i++;
+        temp = temp->next;
+        ++count;
     }
-    return;
 }
 
 int main(){
