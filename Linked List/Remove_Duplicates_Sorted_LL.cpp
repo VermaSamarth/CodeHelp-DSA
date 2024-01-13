@@ -49,8 +49,11 @@ void RemoveDuplicates(Node* &head){
     Node* forward = current->next;
     while(forward != NULL){
         if(current->data == forward->data){
+            Node* temp =forward;
             current->next = forward->next;
             forward = current->next;
+            temp->next = NULL;  
+            delete temp;
         }
         else{
             current = current->next;
