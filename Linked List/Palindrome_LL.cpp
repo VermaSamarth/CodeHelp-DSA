@@ -85,7 +85,7 @@ int main(){
     Node* head = NULL;
     InsertStart(10,head);
     InsertStart(30,head);
-    InsertStart(50,head);
+    InsertStart(50,head); 
     // InsertStart(70,head);
     InsertStart(70,head);
     InsertStart(50,head);
