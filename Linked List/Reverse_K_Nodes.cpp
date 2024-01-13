@@ -93,6 +93,6 @@ int main(){
     printList(head);
     
     cout << "Reversed Linked List: " << endl;
-    head = reverseKNodes(head, 6);
+    head = reverseKNodes(head, 4);
     printList(head);
 }
