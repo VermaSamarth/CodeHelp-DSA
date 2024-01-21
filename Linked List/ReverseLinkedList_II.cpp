@@ -40,6 +40,9 @@ void printList(Node* &head){
     return;
 }
 
+// Using the approach of stack.
+// Push the half of the list that to be reversed into the stack.
+// Then swap the values.
 Node* SortedList(Node* &head, int left, int right){
     if(head == nullptr || head->next == nullptr)
         return head;
