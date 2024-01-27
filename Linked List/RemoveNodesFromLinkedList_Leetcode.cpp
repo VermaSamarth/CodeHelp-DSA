@@ -55,23 +55,34 @@ void printList(Node* &head){
 Node* removeNode(Node* &head){
     stack<Node*> stk;
     Node* temp = head;
-    // int maxval = INT_MIN;
     stk.push(temp);
+    temp = temp->next;
     while(temp != nullptr){
-        //maxval = temp->data;
-        if(temp == stk.top()){
-
+        while(stk.empty() == false && temp->data > stk.top()->data){
+            cout << "Popping: " << stk.top()->data << endl;
+            stk.pop(); 
         }
+        if(stk.empty()){
+            head = temp;
+        }
+        else{
+            stk.top()->next = temp;
+        }
+        if(stk.empty() || temp->data <= stk.top()->data){
+            stk.push(temp);
+        }
+        temp = temp->next;
     }
+    return head;
 }
 
 int main(){
     Node* head = nullptr;
-    InsertStart(70,head);
-    InsertStart(60,head);
     InsertStart(50,head); 
     InsertStart(40,head);
+    InsertStart(60,head);
     InsertStart(30,head);
+    InsertStart(70,head);
     InsertStart(20,head);
     InsertStart(10,head);
     cout << "Linked List: " << endl;
