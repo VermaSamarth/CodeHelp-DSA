@@ -17,7 +17,7 @@ class Node{
         }
 };
 
-Node* reverseList(Node* & head){
+Node* reverseList(Node* &head){
     Node* current = head;   
     Node* previous = nullptr;
     Node* forward ;
