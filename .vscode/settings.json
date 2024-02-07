@@ -5,6 +5,7 @@
         "unordered_map": "cpp",
         "stack": "cpp",
         "ostream": "cpp",
-        "queue": "cpp"
+        "queue": "cpp",
+        "xstring": "cpp"
     }
 }
