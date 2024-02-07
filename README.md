@@ -23,9 +23,9 @@ Data structures and algorithms are the building blocks of Computer Science. They
 ### Topics to be covered ✍️:
 - Queues
 - Trees
-- Heaps
-- Hash Maps
 - Graphs
+- Hash Maps
+- Heaps
 - Dynamic Programming
 ### Languages Used 👨🏻‍💻:
 [![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://cplusplus.com/)
