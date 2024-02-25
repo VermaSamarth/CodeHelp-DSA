@@ -40,9 +40,32 @@ void PrintLevelOrder(Node* root){
     }
 }
 
+void LevelOrderTraversal(Node* root){
+    queue<Node*> level;
+    level.push(root);
+    level.push(nullptr);
+    while(!level.empty()){
+        Node* temp = level.front();
+        level.pop();
+        if(temp == nullptr){
+            cout << endl;
+            if(!level.empty())
+                level.push(nullptr);
+        }
+        else{
+            cout << temp->data << " ";
+            if(temp->left != nullptr)
+                level.push(temp->left);
+            if(temp->right != nullptr)
+                level.push(temp->right);
+        }
+    }
+}
+
 int main(){
     Node* root;
     root = Buildtree();
     cout << "Level Order Travesal of the inputted tree is: " << endl;
-    PrintLevelOrder(root);
+    // PrintLevelOrder(root);
+    LevelOrderTraversal(root);
 }

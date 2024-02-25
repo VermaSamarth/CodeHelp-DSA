@@ -26,18 +26,19 @@ class Node{
 
 Node* BuildTree(){
     int data;
-    cout << "Enter the node data...." << endl;
+    // cout << "Enter the node data...." << endl;
     cin >> data;
     if(data == -1)
         return nullptr;
     Node* root = new Node(data);
-    cout << "Left Tree of node:" << root->data << endl;
+    // cout << "Left Tree of node:" << root->data << endl;
     root->left = BuildTree();
-    cout << "Right Tree of node: " << root->data << endl;
+    // cout << "Right Tree of node: " << root->data << endl;
     root->right = BuildTree();
     return root;
 }
 
+// Printing data in the same line.
 void LevelOrderTraverse(Node* root){
     queue<Node*> que;
     que.push(root);
@@ -52,8 +53,41 @@ void LevelOrderTraverse(Node* root){
     }
 }
 
+// Printing the data properly in different levels/lines.
+void LevelOrderTraversal_Linewise(Node* root){
+    queue<Node*> level;
+    // Step 1
+    level.push(root);
+    level.push(NULL);
+    while(!level.empty()){
+        // Step 2
+        Node* temp = level.front();
+        // Step 3
+        level.pop();
+        // Step 4
+        if(temp == NULL){
+            cout << endl;           // Changing the line.
+            if(!level.empty()){
+                level.push(NULL);
+            }
+        }
+        else{
+            // Step 5
+            cout << temp->data << " ";
+            // Step 6
+            if(temp->left != nullptr)
+                level.push(temp->left);
+            if(temp->right != nullptr)
+                level.push(temp->right);
+        }
+    }
+}
+
 int main(){
     Node* root;
+    cout << "Insert the tree nodes: " << endl;
     root = BuildTree();
-    LevelOrderTraverse(root);
+    cout << "Level Order Traversal: " << endl;
+    // LevelOrderTraverse(root);
+    LevelOrderTraversal_Linewise(root);
 }
