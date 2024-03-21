@@ -1,6 +1,55 @@
 {
     "configurations": [
         {
+            "type": "java",
+            "name": "PlayfairCipher",
+            "request": "launch",
+            "mainClass": "PlayfairCipher",
+            "projectName": "DSA_CODES_50edd0d8"
+        },
+        {
+            "type": "java",
+            "name": "HillCipher",
+            "request": "launch",
+            "mainClass": "HillCipher",
+            "projectName": "DSA_CODES_50edd0d8"
+        },
+        {
+            "type": "java",
+            "name": "VignereCipher",
+            "request": "launch",
+            "mainClass": "VignereCipher",
+            "projectName": "DSA_CODES_50edd0d8"
+        },
+        {
+            "type": "java",
+            "name": "FermatsLittleTheorem",
+            "request": "launch",
+            "mainClass": "FermatsLittleTheorem",
+            "projectName": "DSA_CODES_50edd0d8"
+        },
+        {
+            "type": "java",
+            "name": "AESExample",
+            "request": "launch",
+            "mainClass": "AESExample",
+            "projectName": "DSA_CODES_50edd0d8"
+        },
+        {
+            "type": "java",
+            "name": "DESExample",
+            "request": "launch",
+            "mainClass": "DESExample",
+            "projectName": "DSA_CODES_50edd0d8"
+        },
+        {
+            "type": "java",
+            "name": "InverseUsingEuclidian",
+            "request": "launch",
+            "mainClass": "InverseUsingEuclidian",
+            "projectName": "DSA_CODES_50edd0d8"
+        },
+        {
             "name": "C/C++: g++.exe build and debug active file",
             "type": "cppdbg",
             "request": "launch",
