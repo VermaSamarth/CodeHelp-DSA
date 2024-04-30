@@ -8,6 +8,10 @@
         "queue": "cpp",
         "xstring": "cpp",
         "list": "cpp",
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "map": "cpp",
+        "xtree": "cpp",
+        "utility": "cpp",
+        "cmath": "cpp"
     }
 }
