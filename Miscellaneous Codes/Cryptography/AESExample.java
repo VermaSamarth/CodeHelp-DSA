@@ -3,7 +3,6 @@
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
-import java.util.Base64;
 import java.util.Scanner;
 
 public class AESExample {
@@ -38,6 +37,7 @@ public class AESExample {
             System.out.println("Cipher Key:          " + cipherKeyHex);
             System.out.println("Encrypted Ciphertext: " + encryptedText);
             System.out.println("Decrypted Plaintext: " + decryptedText);
+            scanner.close();
 
         } catch (Exception e) {
             e.printStackTrace();
