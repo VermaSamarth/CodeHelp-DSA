@@ -20,9 +20,10 @@ Data structures and algorithms are the building blocks of Computer Science. They
 - Object Oriented Programming
 - Linked List
 - Stacks
-### Topics to be covered ✍️:
 - Queues
 - Trees
+### Topics to be covered ✍️:
+- Binary Search Tree
 - Graphs
 - Hash Maps
 - Heaps
