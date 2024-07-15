@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "AngryMonk",
+            "request": "launch",
+            "mainClass": "AngryMonk",
+            "projectName": "DSA_CODES_50edd0d8"
+        },
+        {
+            "type": "java",
             "name": "PlayfairCipher",
             "request": "launch",
             "mainClass": "PlayfairCipher",
