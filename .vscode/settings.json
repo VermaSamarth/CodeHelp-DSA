@@ -13,7 +13,8 @@
         "xtree": "cpp",
         "utility": "cpp",
         "cmath": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "deque": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
