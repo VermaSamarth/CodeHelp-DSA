@@ -6,7 +6,7 @@ int main(){
     int n, m;
     cout << "Enter the number of nodes and edges: " << endl;
     cin >> n >> m;
-    vector<int> list[n+1];
+    vector<int> list[n];
     for(int i = 0; i < m; i++){
         int u, v;
         cout << "Enter the nodes which has a edge between it." << endl;
